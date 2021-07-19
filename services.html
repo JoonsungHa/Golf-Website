@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joonsung Ha</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+
+    
+<body>
+    <div class = "main">
+        
+        
+        
+        <div class="menu">
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="contact.html">Contact</a>
+                <a href="signup.html">Sign Up</a>
+            </ul> 
+        </div>
+        
+        
+
+        <div class="information">
+            <div class = "overlay"></div>
+            <!--<img src = "images/camera.jpg" class="mobile">-->
+            <div id="circle">
+                
+                <div class="feature one">
+                    <img src="images/swing1.png" >
+                    <div>
+                        <h1>30 Min Lesson</h1>
+                        <h3>In Person</h3>
+                        <p>-Avaliable from 10am - 5pm on weekdays</p>
+                        <p>-Limited to full swing or short game</p>
+                        <p>-20 dollars per session</p>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="feature two">
+                    <img src="images/swing2.png" width="300" height="300">
+                    <div>
+                        <h1>1 hr Lesson</h1>
+                        <h3>In Person</h3>
+                        <p>-Avaliable from 11am - 4pm on weekdays</p>
+                        <p>-Work on both full swing and short game</p>
+                        <p>-30 dollars per session</p>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="feature three">
+                    <img src="images/swing3.png" width="350" height="350">
+                    <div>
+                        <h1>Online Lesson</h1>
+                        <p>-Send two videos</p>
+                        <p>-One video down the line</p>
+                        <p>-Another video face on</p>
+                        <p>-Describe me your miss</p>
+                        <p>-I will analyze your swing</p>
+                        <p>and tell you why your having this miss</p>
+                        <p>-Setup a plan to fix that swing problem</p>
+                        <p>-15 dollars per session</p>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="feature four">
+                    <img src="images/swing4.png" width="175" height="275">
+                    <div>
+                        <h1>Course Lesson</h1>
+                        <p>-Play 18 holes with me</p>
+                        <p>-Talk about course management</p>
+                        <p>-Learning how to score instead of swinging</p>
+                        <p>-100 dollars per session</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="controls">
+            <img src="images/arrow.png" id="upBtn">
+            <h3>Lesson Options</h3>
+            <img src="images/arrow.png" id="downBtn">
+        </div>
+        
+        
+        
+    </div>
+    
+        
+    
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+        
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+        
+        
+        upBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        
+        downBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+    
+    
+    
+    
+    
+    
+</body> 
+</html>
